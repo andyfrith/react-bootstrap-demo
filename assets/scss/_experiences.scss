@@ -1,0 +1,21 @@
+.experiences {
+
+  @media (max-width: 768px) {
+    margin-top: 30px;
+  }
+
+  .services-header {
+  }
+
+  .service {
+    .container {
+      width: inherit;
+    }
+
+    .side-tag {
+      position: absolute;
+      top: 40px;
+      left: -92px;
+    }
+  }
+}
