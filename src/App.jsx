@@ -9,6 +9,7 @@ var Apples = require('./components/apples/Apples.jsx');
 var About = require('./components/about/About.jsx');
 var Contact = require('./components/contact/Contact.jsx');
 var Footer = require('./components/footer/Footer.jsx');
+var DemoInfoModal = require('./components/DemoInfoModal.jsx');
 var Col = require('react-bootstrap/lib/Col');
 var Grid = require('react-bootstrap/lib/Grid');
 var Row = require('react-bootstrap/lib/Row');
@@ -17,23 +18,30 @@ var mountNode = document.getElementById('app');
 
 var App = React.createClass({
 	render: function () {
-
 		return (
-			<Grid>
-				<Row>
-					<Col xs={12}>
-						<SiteNav />
-						<Header />
-						<SectionsNav />
-						<Experiences />
-						<SectionsNav />
-						<About />
-						<SectionsNav />
-						<Contact />
-					</Col>
-				</Row>
-			</Grid>
+			<div>
+				<DemoInfoModal />
+				</div>
 		);
+
+		//return (
+		//	<Grid>
+		//		<Row>
+		//			<Col xs={12}>
+		//				<SiteNav />
+		//				<Header />
+		//				<SectionsNav />
+		//				<Experiences />
+		//				<SectionsNav />
+		//				<Apples />
+		//				<SectionsNav />
+		//				<About />
+		//				<SectionsNav />
+		//				<Contact />
+		//			</Col>
+		//		</Row>
+		//	</Grid>
+		//);
 	}
 });
 

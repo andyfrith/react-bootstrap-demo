@@ -8,6 +8,16 @@
   }
 
   .service {
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      color: rgb(84, 130, 51);
+      font-weight: bold;
+    }
+
     .container {
       width: inherit;
     }
@@ -15,7 +25,30 @@
     .side-tag {
       position: absolute;
       top: 40px;
-      left: -92px;
+      left: -55px;
+    }
+
+    &.subsection:last-of-type {
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .side-tag {
+        left: -25px;
+      }
+    }
+  }
+
+  .apple {
+    display: inline;
+    float: left;
+    padding-bottom: 30px;
+    min-width: 275px;
+
+    img {
+      width: 215px;
+      height: 142px;
     }
   }
 }

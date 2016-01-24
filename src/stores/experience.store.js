@@ -5,6 +5,8 @@ var ExperienceSource = require('../sources/experience.source');
 class ExperienceStore {
 	constructor() {
 		this.experiences = [];
+		this.services = [];
+		this.apples = [];
 		this.errorMessage = null;
 
 		this.bindListeners({
@@ -22,6 +24,8 @@ class ExperienceStore {
 
 	handleUpdateExperiences(experiences) {
 		this.experiences = experiences;
+		this.services = experiences[0]['services'];
+		this.apples = experiences[0]['apples'];
 		this.errorMessage = null;
 	}
 

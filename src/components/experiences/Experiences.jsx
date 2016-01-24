@@ -5,6 +5,7 @@ var Col = require('react-bootstrap/lib/Col');
 var Grid = require('react-bootstrap/lib/Grid');
 var Row = require('react-bootstrap/lib/Row');
 var Image = require('react-bootstrap/lib/Image');
+var NavItem = require('react-bootstrap/lib/NavItem');
 
 var Services = React.createClass({
 
@@ -26,7 +27,7 @@ var Services = React.createClass({
 		return (
 			<div className="services">
 				{
-					this.props.experiences.map((experience, i) => {
+					this.props.services.map((experience, i) => {
 						return (
 							<div className="service subsection" key={i}>
 								<Grid>
@@ -39,7 +40,7 @@ var Services = React.createClass({
 											<h3>{experience.header}</h3>
 											<h4>{experience.subheader}</h4>
 											<p>{experience.info}</p>
-											<p>{experience.hyperlink}</p>
+											<p><NavItem href={experience.hyperlink}>{experience.hyperlink}</NavItem></p>
 										</Col>
 									</Row>
 								</Grid>
@@ -58,7 +59,7 @@ var Experiences = React.createClass({
 
 	render() {
 		return (
-			<div className="experiences">
+			<div id="experiences" className="experiences">
 				<div className="section-header">
 					<h4>We've got the experience and are committed to excellence.</h4>
 					<h3>We develop RIA, games, social media features, and websites for the apparel, automotive, entertainment, health

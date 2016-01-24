@@ -9,10 +9,10 @@ var SectionsNav = React.createClass({
 			<Navbar className="sections-nav">
 				<Nav pullRight>
 					<NavItem className="jump-to" eventKey={1}>Jump to:</NavItem>
-					<NavItem eventKey={2} href="#">Experiences</NavItem>
-					<NavItem eventKey={3} href="#">See The Apples</NavItem>
-					<NavItem eventKey={4} href="#">About Good Apple Media</NavItem>
-					<NavItem eventKey={5} href="#">Contact</NavItem>
+					<NavItem eventKey={2} href="#experiences">Experiences</NavItem>
+					<NavItem eventKey={3} href="#apples">See The Apples</NavItem>
+					<NavItem eventKey={4} href="#about">About Good Apple Media</NavItem>
+					<NavItem eventKey={5} href="#contact">Contact</NavItem>
 				</Nav>
 			</Navbar>
 		);

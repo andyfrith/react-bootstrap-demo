@@ -1,5 +1,7 @@
 
-.about {
+.contact {
+
+  margin-bottom: 20px;
 
   .subsection {
     border-bottom-left-radius: 15px;
@@ -7,22 +9,12 @@
   }
 
   li {
+    display: inline;
+    list-style: none;
+
     a {
       color: rgb(84, 130, 51);
       font-weight: bold;
-    }
-
-    &.contribution {
-      display: inline;
-      list-style: none;
-
-      &.github {
-        img{
-          margin-left: 10px;
-          width: 64px;
-          height: 32px;
-        }
-      }
     }
   }
 
