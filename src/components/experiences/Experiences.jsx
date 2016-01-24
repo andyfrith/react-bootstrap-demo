@@ -73,10 +73,4 @@ var Experiences = React.createClass({
 	}
 });
 
-/*
- <p>We've got the experience and are committed to excellence.</p>
- <p>I develop RIA, games, social media features, and websites for the apparel, automotive, entertainment, health
- care, and transportation industries.</p>
- */
-
 module.exports = Experiences;
