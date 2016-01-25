@@ -21,7 +21,23 @@ var App = React.createClass({
 		return (
 			<div>
 				<DemoInfoModal />
-				</div>
+				<Grid>
+					<Row>
+						<Col xs={12}>
+							<SiteNav />
+							<Header />
+							<SectionsNav />
+							<Experiences />
+							<SectionsNav />
+							<Apples />
+							<SectionsNav />
+							<About />
+							<SectionsNav />
+							<Contact />
+						</Col>
+					</Row>
+				</Grid>
+			</div>
 		);
 
 		//return (

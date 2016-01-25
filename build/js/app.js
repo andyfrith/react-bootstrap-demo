@@ -30104,8 +30104,24 @@ var App = React.createClass({displayName: "App",
 	render: function () {
 		return (
 			React.createElement("div", null, 
-				React.createElement(DemoInfoModal, null)
+				React.createElement(DemoInfoModal, null), 
+				React.createElement(Grid, null, 
+					React.createElement(Row, null, 
+						React.createElement(Col, {xs: 12}, 
+							React.createElement(SiteNav, null), 
+							React.createElement(Header, null), 
+							React.createElement(SectionsNav, null), 
+							React.createElement(Experiences, null), 
+							React.createElement(SectionsNav, null), 
+							React.createElement(Apples, null), 
+							React.createElement(SectionsNav, null), 
+							React.createElement(About, null), 
+							React.createElement(SectionsNav, null), 
+							React.createElement(Contact, null)
+						)
+					)
 				)
+			)
 		);
 
 		//return (
@@ -30163,28 +30179,37 @@ module.exports = alt;
 var React = require("react");
 var Button = require('react-bootstrap/lib/Button');
 var Modal = require('react-bootstrap/lib/Modal');
+var ModalTitle = require('react-bootstrap/lib/ModalTitle');
+var ModalHeader = require('react-bootstrap/lib/ModalHeader');
+var ModalBody = require('react-bootstrap/lib/ModalBody');
+var ModalFooter = require('react-bootstrap/lib/ModalFooter');
 
 var DemoInfoModal = React.createClass({displayName: "DemoInfoModal",
+
+	getInitialState:function(){
+		return { showModal: true };
+	},
+
+	close:function(){
+		this.setState({ showModal: false });
+	},
+
 	render: function () {
 		return (
-			React.createElement(Modal, React.__spread({},  this.props, {bsSize: "large", "aria-labelledby": "contained-modal-title-lg"}), 
-				React.createElement(Modal.Header, {closeButton: true}, 
-					React.createElement(Modal.Title, {id: "contained-modal-title-lg"}, "Modal heading")
-				), 
-				React.createElement(Modal.Body, null, 
-					React.createElement("h4", null, "Wrapped Text"), 
-					React.createElement("p", null, "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."), 
-					React.createElement("p", null, "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."), 
-					React.createElement("p", null, "Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla."), 
-					React.createElement("p", null, "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."), 
-					React.createElement("p", null, "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."), 
-					React.createElement("p", null, "Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla."), 
-					React.createElement("p", null, "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."), 
-					React.createElement("p", null, "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."), 
-					React.createElement("p", null, "Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.")
-				), 
-				React.createElement(Modal.Footer, null, 
-					React.createElement(Button, {onClick: this.props.onHide}, "Close")
+			React.createElement("div", null, 
+				React.createElement(Modal, {"aria-labelledby": "modal-label", 
+							 show: this.state.showModal, 
+							 onHide: this.close, bsSize: "large", "aria-labelledby": "contained-modal-title-lg"}, 
+					React.createElement(Modal.Header, {closeButton: true}, 
+						React.createElement(Modal.Title, {id: "contained-modal-title-lg"}, "fyi ... this is a ReactJS application!")
+					), 
+					React.createElement(Modal.Body, null, 
+						React.createElement("h4", null, "Website built with Alt, ReactJS, reactJS-bootstrap, Bootstrap 3 CSS"), 
+						React.createElement("p", null, "This version of the Good Apple Media website was created to demonstrate the use of the ReactJS framework.  UI components were developed using the react-js bootstrap components.  CSS styling is accomplished using SASS.  NPM is used for dependency management and such.")
+					), 
+					React.createElement(Modal.Footer, null, 
+						React.createElement(Button, {onClick: this.close}, "Close")
+					)
 				)
 			)
 		);
@@ -30193,7 +30218,7 @@ var DemoInfoModal = React.createClass({displayName: "DemoInfoModal",
 
 module.exports = DemoInfoModal;
 
-},{"react":334,"react-bootstrap/lib/Button":21,"react-bootstrap/lib/Modal":28}],339:[function(require,module,exports){
+},{"react":334,"react-bootstrap/lib/Button":21,"react-bootstrap/lib/Modal":28,"react-bootstrap/lib/ModalBody":29,"react-bootstrap/lib/ModalFooter":31,"react-bootstrap/lib/ModalHeader":32,"react-bootstrap/lib/ModalTitle":33}],339:[function(require,module,exports){
 var React = require("react");
 var Col = require('react-bootstrap/lib/Col');
 var Grid = require('react-bootstrap/lib/Grid');
@@ -30433,12 +30458,6 @@ var Experiences = React.createClass({displayName: "Experiences",
 	}
 });
 
-/*
- <p>We've got the experience and are committed to excellence.</p>
- <p>I develop RIA, games, social media features, and websites for the apparel, automotive, entertainment, health
- care, and transportation industries.</p>
- */
-
 module.exports = Experiences;
 
 },{"../../stores/experience.store":348,"alt/AltContainer":1,"react":334,"react-bootstrap/lib/Col":22,"react-bootstrap/lib/Grid":25,"react-bootstrap/lib/Image":26,"react-bootstrap/lib/NavItem":36,"react-bootstrap/lib/Row":42}],343:[function(require,module,exports){
@@ -30485,7 +30504,7 @@ var SectionsNav = React.createClass({displayName: "SectionsNav",
 			React.createElement(Navbar, {className: "sections-nav"}, 
 				React.createElement(Nav, {pullRight: true}, 
 					React.createElement(NavItem, {className: "jump-to", eventKey: 1}, "Jump to:"), 
-					React.createElement(NavItem, {eventKey: 2, href: "#experiences"}, "Experiences"), 
+					React.createElement(NavItem, {eventKey: 2, href: "#experiences"}, "Experience"), 
 					React.createElement(NavItem, {eventKey: 3, href: "#apples"}, "See The Apples"), 
 					React.createElement(NavItem, {eventKey: 4, href: "#about"}, "About Good Apple Media"), 
 					React.createElement(NavItem, {eventKey: 5, href: "#contact"}, "Contact")
@@ -30512,10 +30531,10 @@ var SiteNav = React.createClass({displayName: "SiteNav",
 				), 
 				React.createElement(Navbar.Collapse, null, 
 					React.createElement(Nav, {pullRight: true}, 
-						React.createElement(NavItem, {eventKey: 1, href: "#"}, "Experiences"), 
-						React.createElement(NavItem, {eventKey: 2, href: "#"}, "See The Apples"), 
-						React.createElement(NavItem, {eventKey: 3, href: "#"}, "About Good Apple Media"), 
-						React.createElement(NavItem, {eventKey: 4, href: "#"}, "Contact")
+						React.createElement(NavItem, {eventKey: 1, href: "#experiences"}, "Experience"), 
+						React.createElement(NavItem, {eventKey: 2, href: "#apples"}, "See The Apples"), 
+						React.createElement(NavItem, {eventKey: 3, href: "#about"}, "About Good Apple Media"), 
+						React.createElement(NavItem, {eventKey: 4, href: "#contact"}, "Contact")
 					)
 				)
 			)
