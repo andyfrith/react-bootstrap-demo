@@ -30232,9 +30232,9 @@ var About = React.createClass({displayName: "About",
 			React.createElement("div", {id: "about", className: "about"}, 
 				React.createElement("div", {className: "section-header"}, 
 					React.createElement("h1", null, "About Good Apple Media"), 
-					React.createElement("p", null, "We're located in the beautiful and exciting city of Denver, Colorado. Our office is only minutes away from" + ' ' +
-						"downtown Denver, Boulder, and also some of the best outdoor activities in the world. We work hard, but like" + ' ' +
-						"everyone else in this part of the world, we play hard too. I'm committed to excellence in many ways!")
+					React.createElement("p", null, "I'm located in the beautiful and exciting city of Denver, Colorado. My office is only minutes away from" + ' ' +
+						"downtown Denver, Boulder, and also some of the best outdoor activities in the world. I work hard, but like" + ' ' +
+						"everyone else in this part of the world, I play hard too. I'm committed to excellence in many ways!")
 				), 
 				React.createElement("div", {className: "subsection"}, 
 					React.createElement(Grid, null, 
@@ -30446,8 +30446,8 @@ var Experiences = React.createClass({displayName: "Experiences",
 		return (
 			React.createElement("div", {id: "experiences", className: "experiences"}, 
 				React.createElement("div", {className: "section-header"}, 
-					React.createElement("h4", null, "We've got the experience and are committed to excellence."), 
-					React.createElement("h3", null, "We develop RIA, games, social media features, and websites for the apparel, automotive, entertainment, health" + ' ' +
+					React.createElement("h4", null, "I've got the experience and am committed to excellence."), 
+					React.createElement("h3", null, "I develop RIA, games, social media features, and websites for the apparel, automotive, entertainment, health" + ' ' +
 						"care, and transportation industries.")
 				), 
 				React.createElement(AltContainer, {store: ExperienceStore}, 
@@ -30482,7 +30482,7 @@ var Header = React.createClass({displayName: "Header",
 		return (
 			React.createElement(Jumbotron, null, 
 				React.createElement("h1", null, "This is Good Apple Media."), 
-				React.createElement("h4", null, "We lead customers in surpassing their interactive media goals as a premier source of creativity and" + ' ' +
+				React.createElement("h4", null, "I lead customers in surpassing their interactive media goals as a premier source of creativity and" + ' ' +
 					"technical expertise in the delivery of state of the art interactive, mobile, web development and design" + ' ' +
 					"solutions.")
 			)
@@ -30551,13 +30551,13 @@ var data = [{
 	"services": [{
 		"header": "Website Design and SEO",
 		"subheader": "Customized Solutions for Your Business",
-		"info": "We'll work with your business to ensure an optimized web presence. Responsive design techniques will be utilized to enhance the user experience on tablet and mobile platforms. We'll integrate blogs, and third-party software, such as; scheduling, and map widgets seamlessly. A comprehensive SEO strategy will be followed to boost your rankings.",
+		"info": "I'll work with your business to ensure an optimized web presence. Responsive design techniques will be utilized to enhance the user experience on tablet and mobile platforms. I'll integrate blogs, and third-party software, such as; scheduling, and map widgets seamlessly. A comprehensive SEO strategy will be followed to boost your rankings.",
 		"hyperlink": "http://alohadentalco.com",
 		"image": "build/images/portfolio/aloha_dental.png"
 	}, {
 		"header": "UI/ UX Design and Development",
 		"subheader": "JavaScript, HTML5, CSS3",
-		"info": "Design and develop solutions to maximize the user experience. Storybording and prototyping is accomplished using Basalmiq and other tools as needed. Development is accomplished using the correct combination of frameworks for particular needs- Ember.js, Sencha Ext JS, Twitter Bootstrap, Handlebars and JQuery to name a few.",
+		"info": "Design and develop solutions to maximize the user experience. Storyboarding and prototyping is accomplished using Basalmiq, Axure and other tools as needed. Development is accomplished using the correct combination of frameworks for particular needs- React, AngularJS, Backbone.js, Foundation, Twitter Bootstrap and JQuery to name a few.",
 		"hyperlink": "",
 		"image": "build/images/portfolio/baseballextjs.png"
 	}, {
@@ -30569,7 +30569,7 @@ var data = [{
 	}, {
 		"header": "Web Development",
 		"subheader": "Online Engineering",
-		"info": "Focused on providing best quality services in web design, animation, software engineering, and online database development- we deliver engauging community sites and customized e-commerce solutions.",
+		"info": "Focused on providing best quality services in web design, animation, software engineering, and online database development- I deliver engaging community sites and customized e-commerce solutions.",
 		"hyperlink": "",
 		"image": "build/images/portfolio/kswiss_tennis_1966_4_service.jpg"
 	}, {

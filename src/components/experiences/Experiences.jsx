@@ -61,8 +61,8 @@ var Experiences = React.createClass({
 		return (
 			<div id="experiences" className="experiences">
 				<div className="section-header">
-					<h4>We've got the experience and are committed to excellence.</h4>
-					<h3>We develop RIA, games, social media features, and websites for the apparel, automotive, entertainment, health
+					<h4>I've got the experience and am committed to excellence.</h4>
+					<h3>I develop RIA, games, social media features, and websites for the apparel, automotive, entertainment, health
 						care, and transportation industries.</h3>
 				</div>
 				<AltContainer store={ExperienceStore}>

@@ -4,13 +4,13 @@ var data = [{
 	"services": [{
 		"header": "Website Design and SEO",
 		"subheader": "Customized Solutions for Your Business",
-		"info": "We'll work with your business to ensure an optimized web presence. Responsive design techniques will be utilized to enhance the user experience on tablet and mobile platforms. We'll integrate blogs, and third-party software, such as; scheduling, and map widgets seamlessly. A comprehensive SEO strategy will be followed to boost your rankings.",
+		"info": "I'll work with your business to ensure an optimized web presence. Responsive design techniques will be utilized to enhance the user experience on tablet and mobile platforms. I'll integrate blogs, and third-party software, such as; scheduling, and map widgets seamlessly. A comprehensive SEO strategy will be followed to boost your rankings.",
 		"hyperlink": "http://alohadentalco.com",
 		"image": "build/images/portfolio/aloha_dental.png"
 	}, {
 		"header": "UI/ UX Design and Development",
 		"subheader": "JavaScript, HTML5, CSS3",
-		"info": "Design and develop solutions to maximize the user experience. Storybording and prototyping is accomplished using Basalmiq and other tools as needed. Development is accomplished using the correct combination of frameworks for particular needs- Ember.js, Sencha Ext JS, Twitter Bootstrap, Handlebars and JQuery to name a few.",
+		"info": "Design and develop solutions to maximize the user experience. Storyboarding and prototyping is accomplished using Basalmiq, Axure and other tools as needed. Development is accomplished using the correct combination of frameworks for particular needs- React, AngularJS, Backbone.js, Foundation, Twitter Bootstrap and JQuery to name a few.",
 		"hyperlink": "",
 		"image": "build/images/portfolio/baseballextjs.png"
 	}, {
@@ -22,7 +22,7 @@ var data = [{
 	}, {
 		"header": "Web Development",
 		"subheader": "Online Engineering",
-		"info": "Focused on providing best quality services in web design, animation, software engineering, and online database development- we deliver engauging community sites and customized e-commerce solutions.",
+		"info": "Focused on providing best quality services in web design, animation, software engineering, and online database development- I deliver engaging community sites and customized e-commerce solutions.",
 		"hyperlink": "",
 		"image": "build/images/portfolio/kswiss_tennis_1966_4_service.jpg"
 	}, {

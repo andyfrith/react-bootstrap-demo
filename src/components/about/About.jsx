@@ -11,9 +11,9 @@ var About = React.createClass({
 			<div id="about" className="about">
 				<div className="section-header">
 					<h1>About Good Apple Media</h1>
-					<p>We're located in the beautiful and exciting city of Denver, Colorado. Our office is only minutes away from
-						downtown Denver, Boulder, and also some of the best outdoor activities in the world. We work hard, but like
-						everyone else in this part of the world, we play hard too. I'm committed to excellence in many ways!</p>
+					<p>I'm located in the beautiful and exciting city of Denver, Colorado. My office is only minutes away from
+						downtown Denver, Boulder, and also some of the best outdoor activities in the world. I work hard, but like
+						everyone else in this part of the world, I play hard too. I'm committed to excellence in many ways!</p>
 				</div>
 				<div className="subsection">
 					<Grid>

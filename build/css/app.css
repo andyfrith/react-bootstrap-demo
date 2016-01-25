@@ -5860,6 +5860,9 @@ body {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px; }
 
+.modal-content {
+  background-color: #d2d2d2; }
+
 .modal-container {
   position: relative; }
 
