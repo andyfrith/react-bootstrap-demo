@@ -7,4 +7,4 @@ This version of the Good Apple Media website was created to demonstrate the use 
 
 ## Live demo
 
-A live demo is available on our [website](http://goodapplemedia.com/v3/)
+A live demo is available on our [website](http://goodapplemedia.com/3.0/)
