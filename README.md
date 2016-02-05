@@ -1,5 +1,5 @@
 
-## Animate is an application demo utilizing Twitter Bootstrap, Flat UI, JQuery, and CSS3.
+## This is an application demo version of the Good Apple Media website.
 
 Website built with Alt, ReactJS, reactJS-bootstrap, Bootstrap 3 CSS
 
